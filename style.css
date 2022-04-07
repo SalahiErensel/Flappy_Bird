@@ -1,0 +1,81 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+.banner{
+    background-image : url(background.png);
+    width : 100%;
+    height : 100vh;
+    background-size : cover;
+    background-position : center;
+}
+#game{
+    height : 400px;
+    width : 400px;
+    margin :1rem auto;
+    overflow : hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black ;
+}
+#block{
+    width : 45px;
+    height : 500px;
+    background-color : green;
+    position : relative;
+    left : 400px;
+    animation : block 2s linear  infinite ;
+}
+@keyframes block{
+    0%{
+        left : 400px;
+    }
+    100%{
+        left : -50px;
+    }
+}
+#hole{
+    height : 150px;
+    width : 50px;
+    position : relative;
+    left : 400px;
+    top : -500px;
+    animation : block 2s linear infinite ;
+    background-color : #0099cc;
+}
+#bird{
+    position : absolute;
+    top : 100px;  
+    height : 50px; 
+    width : 50px;
+}
+#bird img{
+    height : 50px;
+    width : 50px;
+}
+#result{
+    height : 200px;
+    width : 500px;
+    background-image : url(background.png);
+    margin : 5rem auto;
+    border-radius : 20px;
+    text-align : center;
+    display : none;
+}
+#btn{
+    padding : 0.5rem 1rem;
+    border : none;
+    border-radius : 11px;
+    background-color : green;
+    color : white;
+    font-size : 1.5rem;
+    text-transform : uppercase;
+    margin-top : 1rem;
+    cursor : pointer;
+}
+#text{
+    margin-top : 1 rem;
+    font-size : 2rem;
+    color : seashell;
+}
